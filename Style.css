@@ -56,7 +56,7 @@ body {
 
 .header-col-2 {
     flex: 1;
-    background-image: url('./Images/background-3-copy.jpg');
+    background-image: url('https://arshiamoslemian/Images/background-3-copy.jpg');
     background-size: 80%;
     background-position: center right;
     background-repeat: no-repeat;
