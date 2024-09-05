@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = " IE = edge">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <Title>Personal Portfolio</Title> 
+    <link rel ="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/b4d4d6ca17.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/logo-2.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="row">
+            <div class="header-col-1">
+            
+                <h1>Hi,I am Arshia Moslemian</h1>
+                <p>Web Developer</p>
+            </div>
+            <div class="header-col-2">
+            
+                <!-- This div will now hold the background image -->
+            </div>
+
+
+        </div>
+        
+        
+    </div>
+
+</div>
+<!---------about---------->
+<div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/user.jpg" >
+
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Passionate and Innovative Engineer with 4+ years of experience with pioneering technology that empowers 
+                    people to overcome challenges and improve capabilities.Collaborative project experience 
+                    in human-computer interaction (HCI) and machine learning. Possesses a strong understanding
+                    of JavaScript, Python, HTML, TypeScript, CSS, monitoring, and analytics systems. 
+                    Biomedical Engineering graduate passionate about solving real-world problems with innovative
+                    technology, with task adaptability and communication skills. </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>   
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages: </span><br>Python, JavaScript, HTML, TypeScript, Cascading Style Sheets (CSS)</li>
+                            <li><span>Frameworks: </span><br>Django,Bootstrap</li>
+                            <li><span>Tools: </span><br>Pycharm PostgreSQL, MongoDB</li>
+                            <li><span>Database: </span><br>SQL</li>
+                            <li><span>Version Control: </span><br>Git</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="Experience">
+                        <ul>
+                            <li><span>June 2024 – Aug 2024 </span><br>Technical Support Intern</li>
+                            <li><span>Feb 2024 – Apr 2024  </span><br>Full-Stack Web Development for J.W. Foods </li>
+                            <li><span>Feb 2024 – Apr 2024  </span><br>Hospital Readmission Prediction Model </li>
+                            <li><span>Jan 2022 – May 2022  </span><br>Survival Prediction Model Project Work</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="Education">
+                        <ul>
+                            <li><span>2024 </span><br>Full Stack Developer Certificate, Toronto Metropolitan University</li>
+                            <li><span>2024 </span><br>Honors Bachelor of Engineering, Biomedical Engineering, Toronto Metropolitan University </li>
+                        
+                        </ul>
+                    </div>
+
+                </div>
+            </div>  
+        </div>
+</div>
+<!---------portfolio---------->
+<div id="portfolio">
+
+    <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/work1.jpg">
+                <div class="layer">
+                    <h3>J.W. Foods </h3>
+                    <p> a responsive web application for J.W. Foods, a culinary service company, utilizing HTML, 
+                        CSS, and JavaScript for the front-end</p>
+                        <a href="https://github.com/amoslemian/jwfoods"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work2.jpg">
+                <div class="layer">
+                    <h3>Hospital Readmission Prediction Model </h3>
+                    <p> a prediction model using linear regression and data analytics techniques to forecast
+                         hospital readmission rates.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work3.jpg">
+                <div class="layer">
+                    <h3>Survival Prediction Model Project Work </h3>
+                    <p> a survival prediction model by training a neural network constructed in Python 3 
+                        utilizing the PyCharm IDE and the TensorFlow library.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <a href="#contact" class="btn">See more</a>
+
+    </div>
+</div>
+<!---------contact---------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>moslemianarsi@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>(647)-572-9778</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/arshia-moslemian-229870256/"><i class="fa-brands fa-linkedin"></i></a>
+                </div> 
+                <a href="Images/Arshia Moslemian,full-stack dev CV(T).docx" download class="btn btn2">Download CV</a>
+
+
+
+            </div>
+           
+            <div class="contact-right">
+                <form name="submit-to-google-sheet" >
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+
+                </form>
+                <span id="msg"></span>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-content");
+
+    function opentab(tabname){
+        for (tablink of tablinks){
+             tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+             tabcontent.classList.remove("active-tab");
+        }   
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+<script>
+    var sidemenu=document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px    ";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxGI6hS8WYhzSvYRTkQUexW3_LoRxZCBaDwsX4CNcgI-Qg1trYhLvICd3VDQmOH8y3fFg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>  
